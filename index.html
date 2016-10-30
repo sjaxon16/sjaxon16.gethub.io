@@ -39,20 +39,15 @@
             nav {
                 background-color:greenyellow;
             }
-            .rivers-relax {
-                background-color:aqua;
-            }
-            .whitewater-rush {
-                background-color: yellow;
-            }
             h1 {
                 color: red;
-                text-align: center;
+                text-align: right;
                 font-family: "rock salt", "palatino linotype", serif;
+                
             }
             h2 {
                 color: red;
-                text-align: center;
+                text-align: left;
                 font-family: "rock salt", "palatino linotype", serif;
             }
             h3 {
@@ -60,61 +55,131 @@
                 text-align: center;
                 font-family: "rock salt", "palatino linotype", serif;
             }
-            
+           
             #rivers-relax {
-                width: 70%;
+                background-color:black;
+                padding: 1em;
             }
-        
+            .relaxing {
+                background-color: yellow;
+                text-align: center;
+                padding:6px;
+                font-family: "helvetica","times-new-roman", serif;
+                width:30%;
+                float:right;
+         }
+            
+            }
+            #white-rush {
+                background-color:black;
+                padding:1em;
+                
+            }
+            .whitewater-rush {
+                background-color: yellow;
+                text-align: center;
+                padding: 6px;
+                font-family: "helvetica","times-new-roman", serif;
+                width:30%;
+                float:left;
+                
+            }
+            #final-caption {
+                background-color:black;
+                padding:1em;
+            }
+            .closing {
+                background-color: yellow;
+                text-align: center;
+                padding:6px;
+                font-family: "helvetica","times-new-roman", serif;
+                
+            }
+             #section1 {
+                float:left;
+                
+            }
+            #footer1 {
+                background-color:;
+               
+            }
+            .copyright {
+              
+            }
+            #section2 {
+                border: solid black;
+                background-color:green;
+                
+            }
+            #section3{
+                border: solid black;
+                 background-color:green;
+            }
+            #section4{
+                border:solid black;
+                 background-color:green;
+            }
+                 
             p {
                 line-height: 1.5;
+                color:black;
             }
             p.ex {
                 height: 100px;
                 width: 100px;
             }
             p {
-                margin: 2cm 4cm 3cm 4cm;
+                margin: 2px 4px 4px 2px;
             }
-            
-            
+           
+    
+         
         </style>
     </head>
     
     <body>
         <div id="content">
+        <div id="header">
         <header id="section1">
-        <img src="images/raft-rapid.jpg"alt="high adventure experiences"width="400">
-        </header>
+            <p><img src="images/raft-rapid.jpg"alt="high adventure experiences"width="1000"height="400"></p>
+            </header>
+        </div>
         
+            <div id="rivers"></div>
         <section id="section2">
-            <div class="leftcol">
+              <div class="river">
                 <h1 id="rivers-relax">We run rivers to relax </h1>
-        <p class="rivers-relax">We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar phiosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love. </p>
-                
+                  <img src="images/river-narrow.jpg"alt="smooth glass river perfect for relazing on  beautiful summer day"width="600"height="400">
+                    <p class="relaxing">We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar phiosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love. </p>
             </div>
-       
-        <img src="images/river-narrow.jpg"alt="smooth glass river perfect for relazing on  beautiful summer day"width="400">
             </section>
-        
-        <section id="section3">
-        <img src="images/ik-rapid.jpg"alt="The rush of a lifetime comes from the experiences you will see here at Dry Oar"width="400">
-        <h2>We run whitewater for the rush!</h2>
-        <p class="whitewater-rush">That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that the tenseness that come when you are looking down the tongue of a big string of waes makes you appreciate the calm beautiful water that always follows even more.</p>
-        </section>
-        
-        <section id="section4">
-            <h3>Come and join us for the adventure of a lifetime!</h3>
-        <p class="closing">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
             
+        <div id="whitewater"></div>
+        <section id="section3">
+            <div class="whitewater">
+        <h2 id="white-rush">We run whitewater for the rush!</h2>
+                <img src="images/ik-rapid.jpg"alt="The rush of a lifetime comes from the experiences you will see here at Dry Oar"width="600"height="400">
+            <p class="whitewater-rush"> That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that the tenseness that come when you are looking down the tongue of a big string of waes makes you appreciate the calm beautiful water that always follows even more.</p>
+            </div>
         </section>
+        
+            <div id="join-us"></div>
+        <section id="section4">
+            <div class="join-us">
+            <h3 id="final-caption">Come and join us for the adventure of a lifetime!</h3>
+                <p class="closing">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and let us know which one best suits you. We're waiting to hear from you!</p>
+            </div>
+        </section>
+        
         
         <footer>
+            <div id="footer1">
             <a href="index.html">"<img src="images/facebook.png"></a>
            <a href="index.html"><img src="images/instagram.png"></a>
             <a href="index.html"><img src="images/twitter.png"></a>
-        <p>&copy; 2016 Dry Oar || Scott Jackson </p>
-           
-        </footer>
+        <p id="copyright">&copy; 2016 Dry Oar || Scott Jackson </p>
+            </div>
+           </footer>
         </div>
     </body>
     
