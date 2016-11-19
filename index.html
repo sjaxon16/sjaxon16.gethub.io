@@ -3,42 +3,63 @@
     <head>
         <meta charset="utf-8">
         <title>Dry Oar Boating</title>
+        <link rel="stylesheet" type="text/css" href="main.css">
         
-        <header id="section1">
-        <title>Dry Oar Boating</title>
-        <img src="images/dryoarlogo.png"alt="dry oar boating logo"width="200">
         
-        </header>
-        
-        <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="index.html">Rivers</a></li>
-            <li><a href="index.html">FAQ</a></li>
-            <li><a href="index.html">Blog</a></li>
-            <li><a href="index.html">Rates/Dates</a></li>
-            <li><a href="index.html">Contact Us</a></li>
-            <li><a href="index.html">We Run Rivers to Relax</a></li>
-            <li><a href="index.html">We Run Whitewater for the Rush</a></li>
-        </ul>
-        </nav>
         <style>
           @import url('https://fonts.googleapis.com/css?family=Rock+Salt');  
             body {
                 font-family: arial, helvetica, sans-serif;
+                }
+        
+            * {
+                box-sizing:border-box;
             }
             
             #content {
                 width: 90%;
-                max-width: 960px;
+                max-width: 940px;
                 margin:0 auto;
+                 padding: 1em;
+                 clear: both;
+                 overflow: auto;
+              
             }
             img {
                 max-width: 100%;
+                clear:both;
             }
+            #banner img {
+                width: 100%
+            }
+            
             nav {
-                background-color:greenyellow;
+                background-color: black;
+                color: #E7C24F;
+                font-size: 1 1em;
+                line-height: 1.5em;
             }
+            nav > ul {
+                list-style-type: none;
+                display: flex;
+                justify-content:space-around;
+                flex-flow: row wrap;
+            }
+            nav li {
+              flex: 1 0 6em;  
+            }
+            nav a:link, nav a:visited {
+                color: #E7C24F;
+                text-decoration: none;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+            a {
+                color: #E7C24F;
+                text-decoration: none;
+            }
+            
             h1 {
                 color: red;
                 text-align: right;
@@ -47,7 +68,7 @@
             }
             h2 {
                 color: red;
-                text-align: left;
+                text-align: Left;
                 font-family: "rock salt", "palatino linotype", serif;
             }
             h3 {
@@ -61,7 +82,7 @@
                 padding: 1em;
             }
             .relaxing {
-                background-color: yellow;
+                background-color: darkgray;
                 text-align: center;
                 padding:6px;
                 font-family: "helvetica","times-new-roman", serif;
@@ -76,12 +97,12 @@
                 
             }
             .whitewater-rush {
-                background-color: yellow;
+                background-color: darkgray;
                 text-align: center;
                 padding: 6px;
                 font-family: "helvetica","times-new-roman", serif;
                 width:30%;
-                float:left;
+                float:right;
                 
             }
             #final-caption {
@@ -89,35 +110,60 @@
                 padding:1em;
             }
             .closing {
-                background-color: yellow;
+                background-color: darkgray;
                 text-align: center;
                 padding:6px;
                 font-family: "helvetica","times-new-roman", serif;
                 
             }
              #section1 {
-                float:left;
-                
-            }
+                 padding: 1em;
+                 clear: both;
+                 overflow: auto;
+                 }
             #footer1 {
-                background-color:;
-               
-            }
-            .copyright {
+                bottom: 0;
+                padding: 1em;
+                clear: both;
+                overflow: auto;
               
             }
+            #copyright1 {
+                float:left;
+              
+            }
+            #social-icons {
+                float:right;
+            }
             #section2 {
-                border: solid black;
-                background-color:green;
+                border: solid;
+                background-color:lightblue;
+                padding: 1em;
+                clear: both;
+                overflow: auto;
+               
+               }
+            #section2, #section3 {
+                display: flex;
+                flex-flow: row wrap;
+                  -moz-column-count: 2;
+             
+ 
+            }
+            
+            #section3{
+                border: solid;
+                padding: 1em;
+                clear: both;
+                overflow: auto;
                 
             }
-            #section3{
-                border: solid black;
-                 background-color:green;
-            }
             #section4{
-                border:solid black;
-                 background-color:green;
+                border:solid;
+                 background-color:lightblue;
+                padding: 1em;
+                clear: both;
+                overflow: auto;
             }
                  
             p {
@@ -132,37 +178,70 @@
                 margin: 2px 4px 4px 2px;
             }
            
-    
+            body {
+                font-family: Helvetica, Ariel, sans-serif;
+            }
+
          
         </style>
     </head>
     
+    
+    
     <body>
+        
         <div id="content">
+           <header id="section1">
+        <title>Dry Oar Boating</title>
+        <img src="images/dryoarlogo.png"alt="dry oar boating logo"width="200">
+        <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Rivers</a></li>
+            <li><a href="index.html">FAQ</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="index.html">Rates/Dates</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+            <li><a href="index.html">We Run Rivers to Relax</a></li>
+            <li><a href="index.html">We Run Whitewater for the Rush</a></li>
+        </ul>
+        </nav>
+        </header>
+        
+        
+        
         <div id="header">
-        <header id="section1">
-            <p><img src="images/raft-rapid.jpg"alt="high adventure experiences"width="1000"height="400"></p>
+        <header id="content">
+            <img src="images/raft-rapid.jpg"alt="high adventure experiences"width="1000"height="400">
             </header>
         </div>
-        
+        <main>
+            
+           
             <div id="rivers"></div>
         <section id="section2">
-              <div class="river">
-                <h1 id="rivers-relax">We run rivers to relax </h1>
-                  <img src="images/river-narrow.jpg"alt="smooth glass river perfect for relazing on  beautiful summer day"width="600"height="400">
+        <div class="rivers">
+             <h1 id="rivers-relax">We run rivers to relax </h1>
+                  <img src="images/river-narrow.jpg"alt="smooth glass river perfect for relazing on beautiful summer day"width="400"height="200"> 
+            
                     <p class="relaxing">We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar phiosophy of boating. Keeping your oars dry for us means taking time to look around and notice the beauty that surrounds the rivers we love. </p>
             </div>
             </section>
+            </main>
+            
             
         <div id="whitewater"></div>
         <section id="section3">
             <div class="whitewater">
         <h2 id="white-rush">We run whitewater for the rush!</h2>
-                <img src="images/ik-rapid.jpg"alt="The rush of a lifetime comes from the experiences you will see here at Dry Oar"width="600"height="400">
+                  <img src="images/ik-rapid.jpg"alt="The rush of a lifetime comes from the experiences you will see here at Dry Oar"width="400"height="200">
+                
             <p class="whitewater-rush"> That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that the tenseness that come when you are looking down the tongue of a big string of waes makes you appreciate the calm beautiful water that always follows even more.</p>
+                
             </div>
         </section>
         
+            
             <div id="join-us"></div>
         <section id="section4">
             <div class="join-us">
@@ -174,10 +253,14 @@
         
         <footer>
             <div id="footer1">
+               <div id="social-icons">
             <a href="index.html">"<img src="images/facebook.png"></a>
-           <a href="index.html"><img src="images/instagram.png"></a>
+            <a href="index.html"><img src="images/instagram.png"></a>
             <a href="index.html"><img src="images/twitter.png"></a>
+                </div>
+            <div id="copyright1">
         <p id="copyright">&copy; 2016 Dry Oar || Scott Jackson </p>
+                </div>
             </div>
            </footer>
         </div>
